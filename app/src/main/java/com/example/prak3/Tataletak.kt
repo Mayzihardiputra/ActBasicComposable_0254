@@ -58,5 +58,15 @@ fun TataletakBoxColumnRow(modifier: Modifier = Modifier) {
             }
         }
 
+        Spacer(modifier = Modifier.height(10.dp))
+
+        // Kotak Bawah (Cyan)
+        Box(
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(300.dp)
+                .background(Color.Cyan),
+            contentAlignment = Alignment.Center
+        )
 
 
