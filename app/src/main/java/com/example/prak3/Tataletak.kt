@@ -69,4 +69,24 @@ fun TataletakBoxColumnRow(modifier: Modifier = Modifier) {
             contentAlignment = Alignment.Center
         )
 
+        {
+            // Memuat gambar dari drawable
+            Image(
+                painter = painterResource(id = R.drawable.cheesecake),
+                contentDescription = null,
+                contentScale = ContentScale.Fit,
+                modifier = Modifier.fillMaxSize()
+            )
+            Text(
+                text = "My CHeescake",
+                fontSize = 50.sp,
+                color = Color.Red,
+                fontWeight = FontWeight.Bold,
+                fontFamily = FontFamily.Cursive,
+                modifier = Modifier.align(Alignment.Center)
+            )
+        }
+    }
+}
+
 
