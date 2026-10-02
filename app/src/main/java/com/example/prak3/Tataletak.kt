@@ -30,3 +30,33 @@ fun TataletakBoxColumnRow(modifier: Modifier = Modifier) {
     Column(
         modifier = modifier.fillMaxSize()
     ) {
+        // Kotak Atas (Kuning)
+        Box(
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(110.dp)
+                .background(Color.Yellow),
+            contentAlignment = Alignment.Center
+        ) {
+            Column {
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.SpaceEvenly
+                ) {
+                    Text(text = "Col1_Row1_Komponen1", color = Color.Black)
+                    Text(text = "Col1_Row1_Komponen2", color = Color.Black)
+                    Text(text = "Col1_Row1_Komponen3", color = Color.Black)
+                }
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.SpaceEvenly
+                ) {
+                    Text(text = "Col1_Row2_Komponen1", color = Color.Black)
+                    Text(text = "Col1_Row2_Komponen2", color = Color.Black)
+                    Text(text = "Col1_Row2_Komponen3", color = Color.Black)
+                }
+            }
+        }
+
+
+
