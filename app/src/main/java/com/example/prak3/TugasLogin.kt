@@ -113,3 +113,8 @@ fun HalamanLogin(modifier: Modifier = Modifier) {
     }
 }
 
+@Preview(showBackground = true)
+@Composable
+fun HalamanLoginPreview() {
+    HalamanLogin()
+}
