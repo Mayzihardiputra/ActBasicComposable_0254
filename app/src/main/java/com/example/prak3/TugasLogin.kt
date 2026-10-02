@@ -45,3 +45,28 @@ fun HalamanLogin(modifier: Modifier = Modifier) {
                 .fillMaxSize()
                 .padding(top = 16.dp)
         )
+        {
+            // Judul "Login"
+            Text(
+                text = "Login",
+                fontSize = 28.sp,
+                fontWeight = FontWeight.Bold,
+                color = Color.Blue
+            )
+
+            // Subtitle
+            Text(
+                text = "Ini adalah halaman login,",
+                fontSize = 14.sp,
+                color = Color.White
+            )
+
+            Spacer(modifier = Modifier.height(30.dp))
+
+            // Logo Kampus (Kecil)
+            Image(
+                painter = painterResource(id = R.drawable.logoumy), // Ganti dengan nama drawable logo kampus Anda
+                contentDescription = "Logo Kampus",
+                modifier = Modifier.size(130.dp)
+            )
+
