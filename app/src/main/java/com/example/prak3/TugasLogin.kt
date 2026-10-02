@@ -87,4 +87,29 @@ fun HalamanLogin(modifier: Modifier = Modifier) {
                 fontWeight = FontWeight.Bold,
                 color = Color.Blue
             )
+
+            Spacer(modifier = Modifier.height(4.dp))
+
+            // Value NIM
+            Text(
+                text = "20240140254",
+                fontSize = 22.sp,
+                fontWeight = FontWeight.Bold,
+                color = Color.Black
+            )
+
+            Spacer(modifier = Modifier.height(16.dp))
+
+            // Foto Pribadi Lingkaran (Besar)
+            Image(
+                painter = painterResource(id = R.drawable.fotoezi), // Ganti dengan nama drawable foto pribadi Anda
+                contentDescription = "Foto Pribadi",
+                contentScale = ContentScale.Crop,
+                modifier = Modifier
+                    .size(280.dp)
+                    .clip(CircleShape)
+            )
+        }
+    }
 }
+
