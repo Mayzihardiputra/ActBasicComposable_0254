@@ -29,3 +29,19 @@ fun HalamanLogin(modifier: Modifier = Modifier) {
         modifier = modifier.fillMaxSize(),
         contentAlignment = Alignment.TopCenter
     )
+    {
+        // 1. Gambar Background
+        Image(
+            painter = painterResource(id = R.drawable.kmtibg), // Ganti dengan nama drawable background Anda
+            contentDescription = null,
+            contentScale = ContentScale.Crop,
+            modifier = Modifier.fillMaxSize()
+        )
+
+        // 2. Konten Utama (Disusun vertikal dari atas ke bawah)
+        Column(
+            horizontalAlignment = Alignment.CenterHorizontally,
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(top = 16.dp)
+        )
